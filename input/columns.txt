@@ -14,7 +14,7 @@ num_self_hrefs: リンクの数。num_self_hrefs: Mashableが公開している�
 11. average_token_length: コンテンツ内の単語の平均長さ
 12. num_keywords: キーワードの数 メタデータに含まれるキーワードの数
 13.data_channel_is_lifestyle: データチャンネルが「Lifestyle」か？
-14. data_channel_is_entertainment: データチャンネルが「エンターテイメント」か？data_channel_is_entertainment: データチャンネルが'Entertainment'であるか？
+14. data_channel_is_entertainment: データチャンネルが「エンターテイメント」か？
 15. data_channel_is_bus: データチャネルが「ビジネス」であるか。
 16. data_channel_is_socmed: データチャネルは'Social Media'ですか？
 17. data_channel_is_tech: データチャネルは'Tech'ですか？
