@@ -1,4 +1,5 @@
 属性情報です。
+
 0. url: 記事のURL(非予測)
 1. timedelta: 1. timedelta: 論文発表からデータセット取得までの日数 (非予測)
 2. n_tokens_title: タイトルに含まれる単語数
