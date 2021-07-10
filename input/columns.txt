@@ -1,0 +1,65 @@
+属性情報です。
+
+0. url: 記事のURL(非予測)
+1. timedelta: 1. timedelta: 論文発表からデータセット取得までの日数 (非予測)
+2. n_tokens_title: タイトルに含まれる単語数
+3.n_tokens_content: コンテンツに含まれる単語の数
+4.n_unique_tokens: コンテンツ内のユニークワードの割合
+5.n_non_stop_words: コンテンツ内のノンストップワードの割合
+6.n_non_stop_unique_tokens：コンテンツ内のユニークなノンストップワードの割合 コンテンツ内のユニークなノンストップワードの割合
+7. num_hrefs: リンクの数
+num_self_hrefs: リンクの数。num_self_hrefs: Mashableが公開している他の記事へのリンクの数
+9. num_imgs: 画像の数 num_imgs: 画像の数
+10. num_videos：動画の数。動画の数
+11. average_token_length: コンテンツ内の単語の平均長さ
+12. num_keywords: キーワードの数 メタデータに含まれるキーワードの数
+13.data_channel_is_lifestyle: データチャンネルが「Lifestyle」か？
+14. data_channel_is_entertainment: データチャンネルが「エンターテイメント」か？data_channel_is_entertainment: データチャンネルが'Entertainment'であるか？
+15. data_channel_is_bus: データチャネルが「ビジネス」であるか。
+16. data_channel_is_socmed: データチャネルは'Social Media'ですか？
+17. data_channel_is_tech: データチャネルは'Tech'ですか？
+18. データチャンネルは「世界」ですか？データチャネルは「World」ですか？
+19. kw_min_min: 最悪のキーワード(最小シェア)
+20. kw_max_min: 最悪のキーワード(最大シェア)
+21.kw_avg_min：最悪のキーワード(平均シェア)
+22.kw_min_max: 最良キーワード(最小シェア)
+23. kw_max_max: 最良キーワード(最大株数)
+24.kw_avg_max: ベストキーワード(平均株数)
+25.kw_min_avg：平均キーワード(最小シェア)
+26.kw_max_avg：平均的なキーワード(最大シェア)
+27. kw_avg_avg: キーワードの平均値(平均シェア)
+28.自己参照の最小シェア(Self_reference_min_shares) 自己参照の最小シェア： Mashableでの参照記事の最小シェア
+29.自己紹介_MAX_SHARES: 参照記事の最大シェア数
+30. 自己言及_avg_sharess: 参照記事の平均的なシェア数
+31. weekday_is_monday: その記事が月曜日に公開されたか？
+32. weekday_is_tuesday：火曜日に公開された記事か？記事が公開されたのが火曜日か？
+33.weekday_is_wednesday：水曜日に公開された記事か？記事が公開されたのは水曜日か？
+34.Weekday_is_thursday：記事が公開されたのは木曜日？記事が公開されたのは木曜日か？
+35. 平日が金曜日の場合 記事が公開されたのは金曜日か？
+36. 平日_IS_SATURDAY：記事が公開されたのは土曜日ですか？記事が公開されたのは土曜日か？
+37.平日_IS_SUNDAY：記事は日曜日に公開されましたか？記事が公開されたのは日曜日か？
+38.is_weekend: 記事が週末に公開されたか？
+39. LDA_00：LDAトピック0への近さ
+40. LDA_01: LDAトピック1への近さ
+41. LDA_02：LDAトピック2への近さ
+42. LDA_03：LDAトピック3に近いもの
+43. LDA_04：LDAトピック4への近さ
+44.グローバル_主観性 テキストの主観性
+45.グローバル_センティメント_ポラリティ: テキストの感情の極性
+46. Global_rate_positive_words: コンテンツ内の肯定的な単語の割合
+47.グローバル_レート_ネガティブ_ワード コンテンツに含まれるネガティブな単語の割合
+48. rate_positive_words: ニュートラルでないトークンのうち、ポジティブな単語の割合
+49.レート_ネガティブ_ワード ニュートラルではないトークンの中でネガティブな単語の割合
+アベゴ_ポジティブ_極性 肯定的な単語の平均的な極性
+min_positive_polarity: 肯定的な単語の最小極性
+52. max_positive_polarity: ポジティブな単語の極性の最大値
+53. Avg_negative_polarity：負の単語の極性の平均値。否定的な単語の平均的な極性
+54. min_negative_polarity：マイナスの単語の最小極性。否定語の最小極性
+max_negative_polarity：否定語の最大極性。否定的な単語の極性の最大値
+56. タイトル主観性 タイトルの主観性
+タイトルの主観性 57: タイトルの主観性
+58. abs_title_subjectivity：タイトルの主観性 絶対的な主観度
+59.abs_title_sentiment_polarity：タイトルの極性 絶対的な極性のレベル
+60. シェア 株式数(目標)
+
+www.DeepL.com/Translator（無料版）で翻訳しました。
