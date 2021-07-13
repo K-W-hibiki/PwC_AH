@@ -1,0 +1,142 @@
+属性情報です。
+
+0. url: 記事のURL(非予測)
+1. timedelta: 1. timedelta: 一様分布　異常値なし
+2. n_tokens_title: ほぼ正規分布　異常値なし
+3.n_tokens_content: ガンマ分布的
+			ゼロっておかしくない？異常値はなさそう
+
+4.n_unique_tokens: コンテンツ内のユニークワードの割合
+	サンプル(31037)が異常値（1異常だから）→要削除or補完
+
+5.n_non_stop_words: コンテンツ内のノンストップワードの割合
+	サンプル(31037)が異常値（1異常だから）→要削除or補完
+	
+6.n_non_stop_unique_tokens：コンテンツ内のユニークなノンストップワードの割合
+	サンプル(31037)が異常値（1異常だから）→要削除or補完
+
+7. num_hrefs: リンクの数
+	ガンマ分布的　サンプル(39338)が異常値気味→削除？
+
+8. num_self_hrefs: Mashableが公開している他の記事へのリンクの数
+	ガンマ分布的　サンプル（34418）が異常値気味
+
+9. num_imgs: 画像の数
+	ポアソン分布的　異常値なし
+
+10. num_videos：動画の数
+	ポアソン分布的　異常値なし
+
+11. average_token_length: コンテンツ内の単語の平均長さ
+	ほぼ正規分布　ゼロが異常値　サンプル多数
+
+12. num_keywords: キーワードの数 メタデータに含まれるキーワードの数
+	異常値なし　Max10
+
+13.data_channel_is_lifestyle: データチャンネルが「Lifestyle」か？
+
+14. data_channel_is_entertainment: データチャンネルが「エンターテイメント」か？
+
+15. data_channel_is_bus: データチャネルが「ビジネス」であるか。
+
+16. data_channel_is_socmed: データチャネルは'Social Media'ですか？
+
+17. data_channel_is_tech: データチャネルは'Tech'ですか？
+
+18. データチャンネルは「世界」ですか？データチャネルは「World」ですか？
+
+19. kw_min_min: 最悪のキーワード(最小シェア)
+	ほぼ200異常or50未満　どう扱う？　負の値はどうする？
+
+20. kw_max_min: 最悪のキーワード(最大シェア)
+	多いやつが多すぎる　ほぼ1000未満
+
+21.kw_avg_min：最悪のキーワード(平均シェア)
+	多いやつが多すぎる　ほぼ1000未満
+
+22.kw_min_max: 最良キーワード(最小シェア)
+	
+
+23.kw_max_max: 最良キーワード(最大シェア)
+
+24.kw_avg_max: 最良キーワード(平均シェア)
+
+25.kw_min_avg：平均キーワード(最小シェア)
+
+26.kw_max_avg：平均キーワード(最大シェア)
+
+27. kw_avg_avg:平均キーワード(平均シェア)
+	ぼぼ正規分布
+
+28.Self_reference_min_shares：Mashableでの参照記事の最小シェア
+	ほぼゼロ
+29.self_reference_max_shares:  参照記事の最大シェア数
+
+30.self_reference_avg_sharess: 参照記事の平均的なシェア数
+
+
+31. weekday_is_monday: その記事が月曜日に公開されたか？
+32. weekday_is_tuesday：火曜日に公開された記事か？
+33.weekday_is_wednesday：水曜日に公開された記事か？
+34.Weekday_is_thursday：記事が公開されたのは木曜日？
+35.weekday_is_friday: 記事が公開されたのは金曜日か？
+36.weekday_is_Saturday：記事が公開されたのは土曜日ですか
+37.weekday_is_Sunday:記事は日曜日に公開されましたか
+38.is_weekend: 記事が週末に公開されたか？
+
+
+39. LDA_00：LDAトピック0への近さ
+	
+40. LDA_01: LDAトピック1への近さ
+
+41. LDA_02：LDAトピック2への近さ
+
+42. LDA_03：LDAトピック3に近いもの
+
+43. LDA_04：LDAトピック4への近さ
+
+
+
+44.global_subjectivity： テキストの主観性
+	ほぼ正規分布　ゼロが異常値？(ある程度のボリューム)
+
+45.global_sentiment_polarity: テキストの感情の極性
+	ほぼ正規分布　ゼロが異常値？(ある程度のボリューム)
+
+46. Global_rate_positive_words: コンテンツ内の肯定的な単語の割合
+	ほぼ正規分布　ゼロが異常値？(ある程度のボリューム)
+
+47.global_rate_negative_words： コンテンツに含まれるネガティブな単語の割合
+	ほぼ正規分布　ゼロが異常値？(ある程度のボリューム)
+
+48. rate_positive_words: ニュートラルでないトークンのうち、ポジティブな単語の割合
+	49と逆分布
+
+49.rate_negative_words： ニュートラルではないトークンの中でネガティブな単語の割合
+	48と逆分布
+
+50.avg_positive_polarity: 肯定的な単語の平均的な極性
+	ほぼ正規分布　ゼロが異常値？(ある程度のボリューム)
+
+51.min_positive_polarity: 肯定的な単語の最小極性
+	ポアソン的　異常値なし
+
+52.max_positive_polarity: 肯定的な単語の極性の最大値
+	ゼロ以下の数値　ゼロが最大ボリューム
+
+53.Avg_negative_polarity：否定的な単語の平均的な極性
+54.min_negative_polarity：否定的な単語の最小極性
+55.max_negative_polarity：否定的な単語の極性の最大値
+
+
+56. title_subjectivity タイトルの主観性
+	多くがゼロ付近
+
+57: title_sentiment_polarity　タイトルの極性　
+	多くがゼロ付近
+
+58. abs_title_subjectivity：タイトルの主観性 絶対的な主観度
+	ほぼ0.5
+59.abs_title_sentiment_polarity：タイトルの極性 絶対的な極性のレベル
+	ほぼぜろ
+60. シェア 株式数(目標)
